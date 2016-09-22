@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        app:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimaryDark">
+    </android.support.v7.widget.Toolbar>
+    <TableRow>
+        <TextView
+            android:id="@+id/titleManager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="5dip" />
+    </TableRow>
+    <TableRow>
+        <ListView
+            android:id="@id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:drawSelectorOnTop="false" />
+    </TableRow>
+</TableLayout>
